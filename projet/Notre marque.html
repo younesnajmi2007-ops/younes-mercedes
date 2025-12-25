@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Marques</title>
+
+    <style>
+        /* حذف scrollbar */
+        ::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: #111;
+            padding: 15px 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        /* SECTION */
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00bfff;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            color: #ccc;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #1a1a1a, #111);
+            border-radius: 16px;
+            padding: 30px 20px;
+            width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(0,191,255,0.4);
+        }
+
+        .card img {
+            width: 160px;
+            height: auto;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="projet.html">← retour à l'accueil</a>
+</nav>
+
+<section>
+    <h2>Nos Marques</h2>
+    <p class="description">
+        Découvrez les différentes marques de Mercedes et choisissez celle qui correspond à votre style et vos besoins.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="/projet/mercedes-benz-logos-popular-brands-of-cars-isolated-on-transparent-background-3d-render-free-png.webp" alt="Mercedes-Benz">
+            <h3>Mercedes-Benz</h3>
+            <p>La marque emblématique alliant luxe et performance.</p>
+        </div>
+
+         <div class="card">
+            <img src="/projet/logo mayback.webp" alt="Mercedes-Maybach">
+            <h3>Mercedes-Maybach</h3>
+            <p>Luxe ultime pour une expérience incomparable.</p>
+        </div>
+
+        <div class="card">
+            <img src="/projet/logo amg.png" alt="Mercedes-AMG">
+            <h3>Mercedes-AMG</h3>
+            <p>Performances sportives et design audacieux.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
+
+
